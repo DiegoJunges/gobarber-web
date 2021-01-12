@@ -142,7 +142,13 @@ const Dashboard: React.FC = () => {
           <img src={logoImg} alt="GoBarber" />
 
           <Profile>
-            <img src={user.avatar_url} alt={user.name} />
+            <img
+              src={
+                user.avatar_url ||
+                'https://st3.depositphotos.com/1767687/16607/v/600/depositphotos_166074422-stock-illustration-default-avatar-profile-icon-grey.jpg'
+              }
+              alt={user.name}
+            />
             <div>
               <span>Bem-vindo,</span>
               <Link to="/profile">
@@ -171,7 +177,10 @@ const Dashboard: React.FC = () => {
               <strong>Agendamento a seguir</strong>
               <div>
                 <img
-                  src={nextAppointment.user.avatar_url}
+                  src={
+                    nextAppointment.user.avatar_url ||
+                    'https://st3.depositphotos.com/1767687/16607/v/600/depositphotos_166074422-stock-illustration-default-avatar-profile-icon-grey.jpg'
+                  }
                   alt={nextAppointment.user.name}
                 />
 
@@ -200,7 +209,10 @@ const Dashboard: React.FC = () => {
 
                 <div>
                   <img
-                    src={appointment.user.avatar_url}
+                    src={
+                      appointment.user.avatar_url ||
+                      'https://st3.depositphotos.com/1767687/16607/v/600/depositphotos_166074422-stock-illustration-default-avatar-profile-icon-grey.jpg'
+                    }
                     alt={appointment.user.name}
                   />
 
@@ -226,7 +238,10 @@ const Dashboard: React.FC = () => {
 
                 <div>
                   <img
-                    src={appointment.user.avatar_url}
+                    src={
+                      appointment.user.avatar_url ||
+                      'https://st3.depositphotos.com/1767687/16607/v/600/depositphotos_166074422-stock-illustration-default-avatar-profile-icon-grey.jpg'
+                    }
                     alt={appointment.user.name}
                   />
 
